@@ -18,43 +18,49 @@ Includes a side slider for brush thickness, an eraser, background toggle (black/
 
 - Python 3.10+ (tested on Windows; works on macOS/Linux with a webcam)
 
-Install:
+## Install
 
 ```bash
 pip install -r requirements.txt
+```
 
+## Run
 
-Run:
+```bash
 python air_drawing_canvas.py
+```
 
-Controls
--Draw: raise index finger only.
--Thickness: hover index over the left slider to change.
--Buttons (bottom bar):
-    -Red / Green / Blue: change brush color
-    -Eraser: switch to eraser mode
-    -BG: toggle background (black/white)
-    -G- / G+: decrease/increase grid spacing
-    -Clear All: clear the canvas
+## Controls
 
-Keyboard:
-    - s — Save (drawing_YYYYMMDD-HHMMSS.png + preview_*.png)
-    - q — Quit
+- **Draw:** raise **index finger** only.
+- **Thickness:** hover index over the **left slider** to change.
 
-Notes & Troubleshooting
-    -MediaPipe / TFLite warnings on startup are common and safe to ignore.
+**Buttons (bottom bar):**
 
-    -If the webcam feed is dark, add more light or try a different camera.
+- **Red / Green / Blue:** change brush color
+- **Eraser:** switch to eraser mode
+- **BG:** toggle background (black/white)
+- **G- / G+:** decrease/increase grid spacing
+- **Clear All:** clear the canvas
 
-    -If the color indicator ever gets hidden, make sure the info panel doesn’t overlap the top bar (this build already places the panel lower).
+**Keyboard:**
 
-    -On Windows terminals with legacy encodings, avoid printing emojis to prevent UnicodeEncodeError.
+- `s` — Save (`drawing_YYYYMMDD-HHMMSS.png` + `preview_*.png`)
+- `q` — Quit
 
-Project Structure
+## Notes & Troubleshooting
+
+- MediaPipe / TFLite warnings on startup are common and safe to ignore.
+- If the webcam feed is dark, add more light or try a different camera.
+- If the color indicator ever gets hidden, make sure the info panel doesn’t overlap the top bar (this build already places the panel lower).
+- On Windows terminals with legacy encodings, avoid printing emojis to prevent `UnicodeEncodeError`.
+
+## Project Structure
+
+```
 air-drawing-canvas/
 ├─ air_drawing_canvas.py
 ├─ requirements.txt
 ├─ .gitignore
 └─ README.md
-
 ```
