@@ -28,27 +28,27 @@ Run:
 python air_drawing_canvas.py
 
 Controls
-Draw: raise index finger only.
-Thickness: hover index over the left slider to change.
-Buttons (bottom bar):
-    Red / Green / Blue: change brush color
-    Eraser: switch to eraser mode
-    BG: toggle background (black/white)
-    G- / G+: decrease/increase grid spacing
-    Clear All: clear the canvas
+-Draw: raise index finger only.
+-Thickness: hover index over the left slider to change.
+-Buttons (bottom bar):
+    -Red / Green / Blue: change brush color
+    -Eraser: switch to eraser mode
+    -BG: toggle background (black/white)
+    -G- / G+: decrease/increase grid spacing
+    -Clear All: clear the canvas
 
 Keyboard:
-    s — Save (drawing_YYYYMMDD-HHMMSS.png + preview_*.png)
-    q — Quit
+    - s — Save (drawing_YYYYMMDD-HHMMSS.png + preview_*.png)
+    - q — Quit
 
 Notes & Troubleshooting
-    MediaPipe / TFLite warnings on startup are common and safe to ignore.
+    -MediaPipe / TFLite warnings on startup are common and safe to ignore.
 
-    If the webcam feed is dark, add more light or try a different camera.
+    -If the webcam feed is dark, add more light or try a different camera.
 
-    If the color indicator ever gets hidden, make sure the info panel doesn’t overlap the top bar (this build already places the panel lower).
+    -If the color indicator ever gets hidden, make sure the info panel doesn’t overlap the top bar (this build already places the panel lower).
 
-    On Windows terminals with legacy encodings, avoid printing emojis to prevent UnicodeEncodeError.
+    -On Windows terminals with legacy encodings, avoid printing emojis to prevent UnicodeEncodeError.
 
 Project Structure
 air-drawing-canvas/
